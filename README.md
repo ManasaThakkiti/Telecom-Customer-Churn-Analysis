@@ -1,54 +1,66 @@
-Project Overview
+🔍 Project Overview
 
-This project analyzes telecom customer churn using Power BI to identify key factors influencing customer attrition and support data-driven retention strategies.
+This project analyzes telecom customer churn using Power BI to identify key factors that influence customer attrition.
+The analysis helps businesses reduce churn, improve customer satisfaction, and make data-driven decisions.
 
-Business Problem
+❗ Business Problem
 
-Explain the problem the business is facing.
+Telecom companies face high customer churn, leading to revenue loss and increased acquisition costs.
+However, without proper analysis, it is difficult to understand:
 
-Example:
+Why customers leave
 
-Telecom companies experience customer churn due to pricing, service quality, and contract issues. Identifying churn drivers is critical to reducing revenue loss and improving customer retention.
+Which customers are at high risk
 
-Dataset Information
+Which services or pricing models cause churn
 
-Total records: 7,043 customers
+✅ Solution Approach
 
-Key columns:
+Cleaned and transformed raw customer data
 
-Demographics (Gender, SeniorCitizen, Partner)
+Built churn-related KPIs using DAX
+
+Analyzed churn across demographics, tenure, services, and billing
+
+Created interactive Power BI dashboards for insights and decision-making
+
+📁 Dataset Information
+
+Total Records: 7,043 customers
+
+Key Columns:
+
+CustomerID
+
+Gender, SeniorCitizen, Partner, Dependents
 
 Tenure
 
-Services (Internet, Security, Tech Support)
+PhoneService, InternetService, OnlineSecurity, TechSupport
 
-Billing (MonthlyCharges, PaymentMethod)
+Contract, PaymentMethod, MonthlyCharges, TotalCharges
 
-Churn status
+Churn
 
-Tools & Technologies
+🧹 Data Cleaning Steps
 
-Power BI
+✔ Removed null values (TotalCharges)
+✔ Converted TotalCharges from text to numeric
+✔ Standardized categorical values (Yes/No)
+✔ Removed duplicate records
+✔ Created derived fields:
 
-Power Query
+Tenure Groups
 
-DAX
+Total Services Subscribed
 
-Excel
-
-Data Cleaning & Preparation
-
-Removed null values
-
-Converted data types
-
-Standardized categorical values
-
-Created calculated columns and DAX measures
-
-Key Metrics
+📐 Key DAX Measures
 
 Churn Rate
+
+Total Customers
+
+Churned Customers
 
 Average Monthly Charges
 
@@ -56,27 +68,61 @@ Average Tenure
 
 Total Revenue
 
-Total Services Subscribed
+📈 Key Insights
 
-Key Insights
+Customers with month-to-month contracts have the highest churn
 
-Month-to-month contracts show higher churn
+Low-tenure (0–12 months) customers are more likely to churn
 
-Low-tenure customers are more likely to churn
+Fiber optic users show higher churn due to higher charges
 
-Customers with multiple services are more loyal
+Customers with more subscribed services tend to be more loyal
 
-Auto-payment methods reduce churn
+Auto-payment methods reduce churn rate
 
-Dashboard Preview
+🧠 Business Applications
 
-(Add screenshots of your Power BI dashboard)
+🎯 Marketing: Target high-risk customers with retention offers
 
-Business Impact
+🛠 Customer Support: Improve services for high-churn segments
 
-Helps reduce customer churn
+📊 Management: Track churn KPIs and trends
 
-Improves customer satisfaction
+📦 Product Teams: Optimize pricing and service bundles
 
-Supports marketing, support, and management decisions
+💰 Finance: Forecast revenue loss due to churn
+
+📊 Power BI Dashboard
+
+The dashboard includes:
+
+Overall churn KPIs
+
+Churn by tenure, contract, and payment method
+
+Customer demographic analysis
+
+Interactive filters for deep analysis
+
+(Add screenshots here)
+
+🚀 Tools & Technologies
+
+🟡 Power BI
+
+📗 Excel
+
+📘 DAX
+
+🧹 Power Query
+
+🏁 Conclusion
+
+This project demonstrates how data analytics and visualization can help telecom companies:
+
+Reduce customer churn
+
+Improve customer experience
+
+Increase revenue stability
 
